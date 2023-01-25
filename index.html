@@ -21,12 +21,19 @@
         >
       </nav>
       <nav class="header__menu header__menu_mobile">
-        <a href="#" class="header__link scale-down">Marketplace</a>
-        <a href="" class="header__link scale-down">Rankings</a>
-        <a href="#" class="header__link scale-down">Connect a wallet</a>
-        <a href="#" class="header__link scale-down"
-          ><img src="./images/User.png" alt="" class="signup-icon" />Sign up</a
-        >
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+        <nav class="header__menu-items">
+          <a href="#" class="header__link scale-down">Marketplace</a>
+          <a href="" class="header__link scale-down">Rankings</a>
+          <a href="#" class="header__link scale-down">Connect a wallet</a>
+          <a href="#" class="header__link scale-down"
+            ><img src="./images/User.png" alt="" class="signup-icon" />Sign
+            up</a
+          >
+        </nav>
       </nav>
     </header>
     <section class="lead">
@@ -600,6 +607,11 @@
     <section class="widget">
       <div class="widget__container">
         <img src="./images/widget_photo.png" alt="" class="widget__image" />
+        <img
+          src="./images/widget_photo_tablet.png"
+          alt=""
+          class="widget__image widget__image_tablet"
+        />
         <div class="widget__info">
           <h2 class="widget__title">Join our weekly digest</h2>
           <p class="widget__text">
@@ -614,7 +626,9 @@
                 class="email-form__string"
               />
             </div>
-            <div class="email-form__button-container scale-down">
+            <div
+              class="email-form__button-container email-form__button-container_laptop scale-down"
+            >
               <img
                 class="email-form__button-icon"
                 src="./images/email-from__button-icon.png"
@@ -625,6 +639,16 @@
               </button>
             </div>
           </form>
+          <div
+            class="email-form__button-container email-form__button-container_tablet scale-down"
+          >
+            <img
+              class="email-form__button-icon"
+              src="./images/email-from__button-icon.png"
+              alt=""
+            />
+            <button class="email-form__button" type="submit">Subscribe</button>
+          </div>
         </div>
       </div>
     </section>
@@ -680,7 +704,7 @@
             <p class="widget__text widget__text_footer">
               Get exclusive promotions & updates straight to your inbox.
             </p>
-            <form action="#" class="email-form">
+            <form action="#" class="email-form email-form__footer">
               <div class="email-form__string-container">
                 <input
                   type="email"
@@ -689,7 +713,9 @@
                   class="email-form__string"
                 />
               </div>
-              <div class="email-form__button-container scale-down">
+              <div
+                class="email-form__button-container email-form__button-container_footer scale-down"
+              >
                 <button
                   class="email-form__button email-form__button_footer"
                   type="submit"
