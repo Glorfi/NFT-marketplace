@@ -1,0 +1,175 @@
+@import url(./index.css);
+
+.browser {
+  margin: 7.8125% auto 0 auto;
+  width: 82.03125%;
+  max-width: 1050px;
+}
+.browser__title {
+  margin: 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+}
+.browser__subtitle {
+  margin: 10px 0 0 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+}
+.search-line {
+  margin-top: 30px;
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #3b3b3b;
+  border-radius: 20px;
+}
+.search-line__string {
+  margin-left: 20px;
+  width: 91.42%;
+  background-color: transparent;
+  border: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: white;
+}
+.search-line__string:focus {
+  outline: none;
+}
+.search-line__button {
+  margin-right: 20px;
+  background-image: url(../images/search_icon.svg);
+  background-repeat: no-repeat;
+  width: 24px;
+  min-height: 24px;
+}
+.marketplace {
+  margin: 80px auto 0 auto;
+  width: 82.03125%;
+  max-width: 1050px;
+  position: relative;
+}
+.marketplace__bar {
+  display: flex;
+  min-height: 70px;
+}
+.bar__counter {
+  margin: 0;
+  margin-left: 16px;
+  min-width: 50px;
+  border-radius: 20px;
+  background-color: #858584;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+}
+.bar__button {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.NFTs {
+  position: relative;
+  background-color: #3b3b3b;
+}
+.discover__span {
+  width: 41.015625%;
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background-color: #ffffff;
+}
+.discover__cards_marketplace {
+  margin: 0 auto 0 auto;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  width: 82.03125%;
+  max-width: 1050px;
+  flex-wrap: wrap;
+}
+.discover__card:last-child {
+  display: block;
+}
+.discover__card_marketplace {
+  margin-top: 2.857142857142857%;
+  background-color: #2b2b2b;
+}
+#bar__toggle-1 {
+  position: absolute;
+  visibility: hidden;
+}
+#bar__toggle-2 {
+  position: absolute;
+  visibility: hidden;
+}
+#bar__toggle-1:checked ~ .discover__cards_marketplace {
+  display: flex;
+}
+#bar__toggle-1:checked ~ .collections {
+  display: none;
+}
+#bar__toggle-2:checked ~ .discover__cards_marketplace {
+  display: none;
+}
+.collections {
+  position: relative;
+  margin: 0 auto 0 auto;
+  min-height: 300px;
+  padding-top: 30px;
+  width: 82.03125%;
+  max-width: 1050px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collections__span {
+  width: 50%;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ffffff;
+}
+.collections__text {
+  margin: 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  color: #2b2b2b;
+}
+.footer_marketplace {
+  border-top: 2px solid #2b2b2b;
+}
+@media screen and (max-width: 376px) {
+
+  .bar__counter {
+    display: none;
+  }
+}
