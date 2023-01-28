@@ -95,14 +95,6 @@
   position: relative;
   background-color: #3b3b3b;
 }
-.discover__span {
-  width: 41.015625%;
-  display: block;
-  position: absolute;
-  top: 0;
-  height: 2px;
-  background-color: #ffffff;
-}
 .discover__cards_marketplace {
   margin: 0 auto 0 auto;
   padding-top: 30px;
@@ -110,6 +102,15 @@
   width: 82.03125%;
   max-width: 1050px;
   flex-wrap: wrap;
+}
+.discover__span {
+  width: 41.015625%;
+  max-width: 525px;
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background-color: #ffffff;
 }
 .discover__card:last-child {
   display: block;
@@ -168,7 +169,6 @@
   border-top: 2px solid #2b2b2b;
 }
 @media screen and (max-width: 376px) {
-
   .bar__counter {
     display: none;
   }
