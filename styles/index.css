@@ -1091,7 +1091,7 @@
     position: absolute;
     top: 54px;
     right: 0;
-    width: 50vh;
+    width: 100vw;
     height: 100vh;
     background-color: #2b2b2b;
     align-items: flex-end;
