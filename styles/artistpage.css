@@ -1,0 +1,209 @@
+@import url(./index.css);
+@import url(./marketplace.css);
+.cover {
+  width: 100%;
+}
+.cover__image {
+  width: 100%;
+  min-height: 320px;
+  background: linear-gradient(
+      180deg,
+      rgba(151, 71, 255, 0) 21.88%,
+      #9747ff 95.31%
+    ),
+    url(../images/cover.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cover__artist-avatar {
+  margin-left: 8.984375%;
+  margin-top: -70px;
+  width: 120px;
+  border: 2px solid #2b2b2b;
+  border-radius: 20px;
+}
+.artist {
+  margin: 40px auto 0 auto;
+  width: 82.03125%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.artist__name {
+  margin: 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+}
+.artist__stats {
+  margin-top: 30px;
+  max-width: 510px;
+  grid-column: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.artist__stats-item {
+}
+.artist__number {
+  margin: 0;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+.artist__text {
+  margin: 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.artist__bio {
+  grid-column: 1;
+  margin-top: 30px;
+}
+.artist__bio-title {
+  margin: 0;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #858584;
+}
+.artist__bio-text {
+  margin: 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.artist__social {
+  margin-top: 30px;
+  grid-column: 1;
+}
+.artist__social-text {
+  margin: 0;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 160%;
+  text-transform: capitalize;
+  color: #858584;
+}
+.artist__social-link {
+}
+.artist__social-icon {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.artist__buttons {
+  grid-column: 2;
+  grid-row: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.artist__button-1 {
+  box-sizing: border-box;
+  padding: 20px;
+  min-width: 112px;
+  height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #a259ff;
+  border-radius: 20px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+.artist__button-icon {
+  margin-right: 12px;
+}
+.artist__button-2 {
+  box-sizing: border-box;
+  padding: 20px;
+  min-width: 112px;
+  height: 60px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: none;
+  border: 2px solid #a259ff;
+  border-radius: 20px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+.marketplace_artist {
+  margin: 40px auto 0 auto;
+}
+.discover__span_artist {
+  width: 33.33%;
+  max-width: 350px;
+  right: 66.66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.collections__span_artist {
+  width: 33.33%;
+  max-width: 350px;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.owned {
+  position: relative;
+  margin: 0 auto 0 auto;
+  min-height: 300px;
+  padding-top: 30px;
+  width: 82.03125%;
+  max-width: 1050px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owned__text {
+  margin: 0;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 110%;
+  color: #2b2b2b;
+}
+.owned__span {
+  display: block;
+  position: absolute;
+  width: 33.33%;
+  max-width: 350px;
+  top: 0;
+  right: 33.33%;
+  height: 2px;
+  background-color: #ffffff;
+}

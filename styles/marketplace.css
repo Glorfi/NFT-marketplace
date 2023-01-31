@@ -98,7 +98,43 @@
   position: relative;
   background-color: #3b3b3b;
 }
+.NFT__button_inactive {
+  position: absolute;
+  width: 50%;
+  min-height: 70px;
+  top: -70px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #858584;
+  background-color: #2B2B2B;
+  z-index: 2;
+}
+.NFT__counter_inactive {
+  margin: 0;
+  margin-left: 16px;
+  min-width: 50px;
+  border-radius: 20px;
+  background: #3b3b3b;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: white;
+}
 .discover__cards_marketplace {
+  position: relative;
   margin: 0 auto 0 auto;
   padding-top: 30px;
   padding-bottom: 80px;
@@ -107,11 +143,11 @@
   flex-wrap: wrap;
 }
 .discover__span {
-  width: 41.015625%;
-  max-width: 525px;
+  width: 50%;
   display: block;
   position: absolute;
   top: 0;
+  right: 50%;
   height: 2px;
   background-color: #ffffff;
 }
@@ -130,13 +166,29 @@
   position: absolute;
   visibility: hidden;
 }
+#bar__toggle-3 {
+  position: absolute;
+  visibility: hidden;
+}
 #bar__toggle-1:checked ~ .discover__cards_marketplace {
   display: flex;
 }
 #bar__toggle-1:checked ~ .collections {
   display: none;
 }
+#bar__toggle-1:checked ~ .owned {
+  display: none;
+}
 #bar__toggle-2:checked ~ .discover__cards_marketplace {
+  display: none;
+}
+#bar__toggle-2:checked ~ .owned {
+  display: none;
+}
+#bar__toggle-3:checked ~ .discover__cards_marketplace {
+  display: none;
+}
+#bar__toggle-3:checked ~ .collections {
   display: none;
 }
 .collections {

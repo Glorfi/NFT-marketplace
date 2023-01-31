@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/marketplace.css" />
+    <link rel="stylesheet" href="./styles/artistpage.css" />
     <title>NFT Market-Place</title>
   </head>
   <body class="body">
@@ -28,8 +28,10 @@
           <span></span>
         </label>
         <nav class="header__menu-items">
-          <a href="#" class="header__link scale-down">Marketplace</a>
-          <a href="#" class="header__link scale-down">Rankings</a>
+          <a href="./marketplace.html" class="header__link scale-down"
+            >Marketplace</a
+          >
+          <a href="" class="header__link scale-down">Rankings</a>
           <a href="#" class="header__link scale-down">Connect a wallet</a>
           <a href="./signup.html" class="header__link scale-down"
             ><img src="./images/User.png" alt="" class="signup-icon" />Sign
@@ -38,38 +40,102 @@
         </nav>
       </nav>
     </header>
-    <section class="browser">
-      <h1 class="browser__title">Browse Marketplace</h1>
-      <p class="browser__subtitle">
-        Browse through more than 50k NFTs on the NFT Marketplace.
-      </p>
-      <form action="#" class="search-line">
-        <input
-          type="text"
-          class="search-line__string"
-          placeholder="Search your favourite NFTs"
-        />
-        <button type="submit" class="search-line__button"></button>
-      </form>
+    <section class="cover">
+      <div class="cover__image"></div>
+      <img
+        src="./images/cover__artist-avatar.png"
+        alt=""
+        class="cover__artist-avatar scale-down"
+      />
     </section>
-    <section class="marketplace">
+    <section class="artist">
+      <h2 class="artist__name">Animakid</h2>
+      <div class="artist__stats">
+        <div class="artist__stats-item">
+          <p class="artist__number">250k+</p>
+          <p class="artist__text">Volume</p>
+        </div>
+        <div class="artist__stats-item">
+          <p class="artist__number">50+</p>
+          <p class="artist__text">NFTs sold</p>
+        </div>
+        <div class="artist__stats-item">
+          <p class="artist__number">3000+</p>
+          <p class="artist__text">Followers</p>
+        </div>
+      </div>
+      <div class="artist__bio">
+        <p class="artist__bio-title">Bio</p>
+        <p class="artist__bio-text">The internet's Friendliest Designer kid</p>
+      </div>
+      <div class="artist__social">
+        <p class="artist__social-text">Links</p>
+        <a href="#" class="artist__social-link"
+          ><img
+            class="artist__social-icon scale-down"
+            src="./images/website_icon.svg"
+            alt="Discord"
+        /></a>
+        <a href="#" class="artist__social-link"
+          ><img
+            class="artist__social-icon scale-down"
+            src="./images/DiscordLogo.svg"
+            alt="Discord" /></a
+        ><a href="#" class="artist__social-link"
+          ><img
+            class="artist__social-icon scale-down"
+            src="./images/YoutubeLogo.svg"
+            alt="YouTube" /></a
+        ><a href="#" class="artist__social-link"
+          ><img
+            class="artist__social-icon scale-down"
+            src="./images/TwitterLogo.svg"
+            alt="Twitter" /></a
+        ><a href="#" class="artist__social-link"
+          ><img
+            class="artist__social-icon scale-down"
+            src="./images/InstagramLogo.svg"
+            alt="Instagram"
+        /></a>
+      </div>
+      <div class="artist__buttons">
+        <a href="" class="artist__button-1 scale-down"
+          ><img
+            src="./images/artist_button_1.png"
+            alt="copy"
+            class="artist__button-icon"
+          />0xc0E3...B79C</a
+        ><a href="" class="artist__button-2 scale-down"
+          ><img
+            src="./images/artist_button_2.png"
+            alt="plus"
+            class="artist__button-icon"
+          />Follow</a
+        >
+      </div>
+    </section>
+    <section class="marketplace marketplace_artist">
       <div class="marketplace__bar">
         <label class="bar__button" for="bar__toggle-1"
-          >NFTs
+          >Created
           <p class="bar__counter">302</p></label
         >
-        <label class="bar__button" for="bar__toggle-2"
-          >Collections
+        <label class="bar__button" for="bar__toggle-3"
+          >Owned
           <p class="bar__counter">67</p>
+        </label>
+        <label class="bar__button" for="bar__toggle-2"
+          >Collection
+          <p class="bar__counter">4</p>
         </label>
       </div>
     </section>
     <div class="NFTs">
       <input type="radio" id="bar__toggle-1" name="drone" value="1" checked />
       <input type="radio" id="bar__toggle-2" name="drone" value="2" />
+      <input type="radio" id="bar__toggle-3" name="drone" value="3" />
       <div class="discover__cards discover__cards_marketplace">
-        <span class="discover__span"></span>
-        <label class="NFT__button_inactive" for="bar__toggle-2">Collections  <p class="NFT__counter_inactive">67</p></label>
+        <span class="discover__span discover__span_artist"></span>
         <a
           href="#"
           class="discover__card discover__card_marketplace scale-down"
@@ -396,8 +462,12 @@
         </a>
       </div>
       <div class="collections">
-        <span class="collections__span"></span>
+        <span class="collections__span collections__span_artist"></span>
         <p class="collections__text">Sorry nothing to display here yet :(</p>
+      </div>
+      <div class="owned">
+        <span class="owned__span"></span>
+        <p class="owned__text">There is nothing owned at the moment</p>
       </div>
     </div>
     <footer class="footer footer_marketplace">

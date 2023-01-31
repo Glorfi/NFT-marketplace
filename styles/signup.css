@@ -102,7 +102,7 @@ input:focus {
     line-height: 140%;
   }
 }
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 672px) {
   .signup {
     grid-template-columns: 1fr;
   }
