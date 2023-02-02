@@ -5,7 +5,7 @@
 }
 .cover__image {
   width: 100%;
-  min-height: 320px;
+  min-height: 25vw;
   background: linear-gradient(
       180deg,
       rgba(151, 71, 255, 0) 21.88%,
@@ -19,7 +19,7 @@
 .cover__artist-avatar {
   margin-left: 8.984375%;
   margin-top: -70px;
-  width: 120px;
+  max-width: 120px;
   border: 2px solid #2b2b2b;
   border-radius: 20px;
 }
@@ -206,4 +206,179 @@
   right: 33.33%;
   height: 2px;
   background-color: #ffffff;
+}
+.Owned__button_inactive_artist-page {
+  position: absolute;
+  width: 33.33%;
+  min-height: 70px;
+  top: -70px;
+  right: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #858584;
+  background-color: #2b2b2b;
+  z-index: 2;
+}
+.Owned__counter_inactive_artist-page {
+  margin: 0;
+  margin-left: 16px;
+  min-width: 50px;
+  border-radius: 20px;
+  background: #3b3b3b;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: white;
+}
+.collections__button_inactive_artist-page {
+  position: absolute;
+  width: 33.33%;
+  min-height: 70px;
+  top: -70px;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #858584;
+  background-color: #2b2b2b;
+  z-index: 2;
+}
+.collections__counter_inactive_artist-page {
+  margin: 0;
+  margin-left: 16px;
+  min-width: 50px;
+  border-radius: 20px;
+  background: #3b3b3b;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: white;
+}
+.NFTs__button_inactive_artist-page {
+  position: absolute;
+  width: 33.33%;
+  min-height: 70px;
+  top: -70px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #858584;
+  background-color: #2b2b2b;
+  z-index: 2;
+}
+.NFTs__counter_inactive_artist-page {
+  margin: 0;
+  margin-left: 16px;
+  min-width: 50px;
+  border-radius: 20px;
+  background: #3b3b3b;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: white;
+}
+@media screen and (max-width: 835px) {
+  .cover__image {
+    min-height: 33.57314148681055vw;
+  }
+  .artist {
+    grid-template-columns: 1fr;
+  }
+  .artist__buttons {
+    margin-top: 30px;
+    grid-column: 1;
+    grid-row: 2;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 511px) {
+  .bar__counter,
+  .Owned__counter_inactive_artist-page,
+  .NFTs__counter_inactive_artist-page,
+  .collections__counter_inactive_artist-page {
+    display: none;
+  }
+}
+@media screen and (max-width: 426px) {
+  .cover__image {
+    min-height: 66.66vw;
+  }
+  .cover {
+    display: flex;
+    flex-direction: column;
+  }
+  .cover__artist-avatar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .artist__name {
+    font-size: 28px;
+    line-height: 140%;
+  }
+  .artist__buttons {
+    flex-direction: column;
+  }
+  .artist__button-1,
+  .artist__button-2 {
+    justify-content: center;
+  }
+  .artist__number {
+    font-size: 22px;
+    line-height: 160%;
+  }
+  .artist__text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .artist__bio-title {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .artist__bio-text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .artist__social-text {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .artist__social-icon {
+    width: 100%;
+    max-width: 24px;
+  }
 }
