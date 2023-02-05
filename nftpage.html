@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/marketplace.css" />
+    <link rel="stylesheet" href="./styles/nftpage.css" />
     <title>NFT MarketPlace</title>
   </head>
   <body class="body">
@@ -28,8 +28,10 @@
           <span></span>
         </label>
         <nav class="header__menu-items">
-          <a href="#" class="header__link scale-down">Marketplace</a>
-          <a href="#" class="header__link scale-down">Rankings</a>
+          <a href="./marketplace.html" class="header__link scale-down"
+            >Marketplace</a
+          >
+          <a href="" class="header__link scale-down">Rankings</a>
           <a href="#" class="header__link scale-down">Connect a wallet</a>
           <a href="./signup.html" class="header__link scale-down"
             ><img src="./images/User.png" alt="" class="signup-icon" />Sign
@@ -38,59 +40,120 @@
         </nav>
       </nav>
     </header>
-    <section class="browser">
-      <h1 class="browser__title">Browse Marketplace</h1>
-      <p class="browser__subtitle">
-        Browse through more than 50k NFTs on the NFT Marketplace.
-      </p>
-      <form action="#" class="search-line">
-        <input
-          type="text"
-          class="search-line__string"
-          placeholder="Search your favourite NFTs"
-        />
-        <button type="submit" class="search-line__button"></button>
-      </form>
-    </section>
-    <section class="marketplace">
-      <div class="marketplace__bar">
-        <label class="bar__button" for="bar__toggle-1"
-          >NFTs
-          <p class="bar__counter">302</p></label
+    <section class="NFT"></section>
+    <section class="description">
+      <h1 class="description__title">The Orbitians</h1>
+      <p class="description__date">Minted on Sep 30, 2022</p>
+      <div class="description__creator">
+        <h2 class="description__subtitle">Created by</h2>
+        <a href="./artistpage.html" class="description__creator-name"
+          ><img
+            src="./images/artist_avatar_9.png"
+            alt=""
+            class="description__creator-avatar"
+          />Orbitian</a
         >
-        <label class="bar__button" for="bar__toggle-2"
-          >Collections
-          <p class="bar__counter">67</p>
-        </label>
+      </div>
+      <div class="description__info">
+        <h2 class="description__subtitle">Description</h2>
+        <p class="description__text">
+          The Orbitians is a collection of 10,000 unique NFTs on the Ethereum
+          blockchain.
+        </p>
+        <p class="description__text">
+          There are all sorts of beings in the NFT Universe. The most advanced
+          and friendly of the bunch are Orbitians.
+        </p>
+        <p class="description__text">
+          They live in a metal space machines, high up in the sky and only have
+          one foot on Earth.
+        </p>
+        <p class="description__text">
+          These Orbitians are a peaceful race, but they have been at war with a
+          group of invaders for many generations. The invaders are called
+          Upside-Downs, because of their inverted bodies that live on the
+          ground, yet do not know any other way to be. Upside-Downs believe that
+          they will be able to win this war if they could only get an eye into
+          Orbitian territory, so they've taken to make human beings their
+          target.
+        </p>
+      </div>
+      <div class="description__details">
+        <h2 class="description__subtitle">Details</h2>
+        <a href="" class="description__link"
+          ><img
+            src="./images/website_icon.svg"
+            alt=""
+            class="description__link-icon"
+          />View on Etherscan</a
+        >
+        <a href="" class="description__link"
+          ><img
+            src="./images/website_icon.svg"
+            alt=""
+            class="description__link-icon"
+          />View Original</a
+        >
+      </div>
+      <div class="description__tag-container">
+        <h2 class="description__subtitle">Tags</h2>
+        <div class="description__tags">
+          <a href="" class="description__tag scale-down">Animation</a
+          ><a href="" class="description__tag scale-down">Illustration</a
+          ><a href="" class="description__tag scale-down">Moon</a
+          ><a href="" class="description__tag scale-down">Space</a>
+        </div>
+      </div>
+      <div class="timer timer_NFT">
+        <p class="timer__title">Auction ends in:</p>
+        <div class="timer__container">
+          <div class="timer__block">
+            <p class="timer__number">23</p>
+            <p class="timer__text">hours</p>
+          </div>
+          <span class="timer__span">:</span>
+          <div class="timer__block">
+            <p class="timer__number">59</p>
+            <p class="timer__text">minutes</p>
+          </div>
+          <span class="timer__span">:</span>
+          <div class="timer__block">
+            <p class="timer__number">59</p>
+            <p class="timer__text">seconds</p>
+          </div>
+        </div>
+        <a href="#" class="timer__link scale-down">Place Bid</a>
       </div>
     </section>
-    <div class="NFTs">
-      <input type="radio" id="bar__toggle-1" name="drone" value="1" checked />
-      <input type="radio" id="bar__toggle-2" name="drone" value="2" />
-      <div class="discover__cards discover__cards_marketplace">
-        <span class="discover__span"></span>
-        <label class="NFT__button_inactive" for="bar__toggle-2"
-          >Collections
-          <p class="NFT__counter_inactive">67</p></label
+    <section class="discover discover_nft">
+      <div class="discover__heading">
+        <div class="discover__headline-text">
+          <h2 class="discover__title">more from this artist</h2>
+        </div>
+        <a href="./artistpage.html" class="discover__button scale-down"
+          ><img
+            src="./images/ArrowRight_icon.svg"
+            alt=""
+            class="rocket-icon"
+          />Go to Artist Page</a
         >
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+      </div>
+      <div class="discover__cards discover__cards_NFTs">
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-1.png"
+            src="./images/artist_nft_1.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Magic Mushroom 0325</p>
+            <p class="discover__card-NFT-name">Foxy Life</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_2.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">Shroomie</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -100,24 +163,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-2.png"
+            src="./images/artist_nft_2.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Happy Robot 032</p>
+            <p class="discover__card-NFT-name">Cat from Future</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_3.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">BeKind2Robots</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -127,24 +187,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-3.png"
+            src="./images/artist_nft_3.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">happy robot 024</p>
+            <p class="discover__card-NFT-name">Psycho Dog</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_3.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">BeKind2Robots</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -154,10 +211,7 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
             src="./images/marketplace_item-4.png"
             alt="NFT"
@@ -167,11 +221,11 @@
             <p class="discover__card-NFT-name">Designer Bear</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_4.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">MoonDancer</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -181,24 +235,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-5.png"
+            src="./images/artist_nft_5.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Colorful Dog 0356</p>
+            <p class="discover__card-NFT-name">Dancing Robot 0375</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_5.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">NebulaKid</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -208,24 +259,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-6.png"
+            src="./images/artist_nft_6.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Dancing robot</p>
+            <p class="discover__card-NFT-name">Dancing robot 0356</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_6.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">SpaceOne</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -235,24 +283,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-7.png"
+            src="./images/artist_nft_7.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Cherry blossom girl 035</p>
+            <p class="discover__card-NFT-name">Dancing Robot 0321</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_4.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">MoonDancer</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -262,24 +307,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-8.png"
+            src="./images/artist_nft_8.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Space Travel</p>
+            <p class="discover__card-NFT-name">Dancing Robot 0512</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_5.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">NebulaKid</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -289,24 +331,21 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
+        <a href="#" class="discover__card discover__card_nft scale-down">
           <img
-            src="./images/marketplace_item-9.png"
+            src="./images/artist_nft_9.png"
             alt="NFT"
             class="discover__card-image"
           />
           <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Sunset Dimension</p>
+            <p class="discover__card-NFT-name">Dancing Robot 0024</p>
             <div class="discover__card-artist-info">
               <img
-                src="./images/artist_icon_6.png"
+                src="./images/artist_avatar_9.png"
                 alt="artist avatar"
                 class="discover__card-artist-icon"
               />
-              <p class="discover__card-artist-name">SpaceOne</p>
+              <p class="discover__card-artist-name">Orbitian</p>
             </div>
             <div class="NFT-info">
               <p class="NFT-info__price-text">Price</p>
@@ -316,98 +355,19 @@
             </div>
           </div>
         </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
-          <img
-            src="./images/marketplace_item-10.png"
-            alt="NFT"
-            class="discover__card-image"
-          />
-          <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Desert Walk</p>
-            <div class="discover__card-artist-info">
-              <img
-                src="./images/artist_icon_4.png"
-                alt="artist avatar"
-                class="discover__card-artist-icon"
-              />
-              <p class="discover__card-artist-name">MoonDancer</p>
-            </div>
-            <div class="NFT-info">
-              <p class="NFT-info__price-text">Price</p>
-              <p class="NFT-info__price-number">1.63 ETH</p>
-              <p class="NFT-info__bid-text">Highest Bid</p>
-              <p class="NFT-info__bid-number">0.33 wETH</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
-          <img
-            src="./images/marketplace_item-11.png"
-            alt="NFT"
-            class="discover__card-image"
-          />
-          <div class="discover__card-info">
-            <p class="discover__card-NFT-name">IceCream Ape 0324</p>
-            <div class="discover__card-artist-info">
-              <img
-                src="./images/artist_icon_5.png"
-                alt="artist avatar"
-                class="discover__card-artist-icon"
-              />
-              <p class="discover__card-artist-name">NebulaKid</p>
-            </div>
-            <div class="NFT-info">
-              <p class="NFT-info__price-text">Price</p>
-              <p class="NFT-info__price-number">1.63 ETH</p>
-              <p class="NFT-info__bid-text">Highest Bid</p>
-              <p class="NFT-info__bid-number">0.33 wETH</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="./nftpage.html"
-          class="discover__card discover__card_marketplace scale-down"
-        >
-          <img
-            src="./images/marketplace_item-12.png"
-            alt="NFT"
-            class="discover__card-image"
-          />
-          <div class="discover__card-info">
-            <p class="discover__card-NFT-name">Colorful Dog 0344</p>
-            <div class="discover__card-artist-info">
-              <img
-                src="./images/artist_icon_6.png"
-                alt="artist avatar"
-                class="discover__card-artist-icon"
-              />
-              <p class="discover__card-artist-name">SpaceOne</p>
-            </div>
-            <div class="NFT-info">
-              <p class="NFT-info__price-text">Price</p>
-              <p class="NFT-info__price-number">1.63 ETH</p>
-              <p class="NFT-info__bid-text">Highest Bid</p>
-              <p class="NFT-info__bid-number">0.33 wETH</p>
-            </div>
-          </div>
-        </a>
+        
       </div>
-      <div class="collections">
-        <span class="collections__span"></span>
-        <label class="collections__button_inactive" for="bar__toggle-1"
-          >NFTs
-          <p class="collections__counter_inactive">302</p></label
-        >
-        <p class="collections__text">Sorry nothing to display here yet :(</p>
-      </div>
-    </div>
-    <footer class="footer footer_marketplace">
+      <a
+        href="./artistpage.html"
+        class="discover__button discover__button_mobile discover__button_mobile_NFT scale-down"
+        ><img
+          src="./images/artist_button_2.png"
+          alt=""
+          class="rocket-icon"
+        />See All</a
+      >
+    </section>
+    <footer class="footer">
       <div class="footer__container">
         <div class="footer__info">
           <img src="./images/header__logo.svg" alt="" class="footer__logo" />
@@ -444,7 +404,8 @@
         <div class="footer__explore">
           <p class="footer__explore-title">Explore</p>
           <nav class="footer__explore-menu">
-            <a href="#" class="footer__explore-link">Marketplace</a
+            <a href="./marketplace.html" class="footer__explore-link"
+              >Marketplace</a
             ><a href="#" class="footer__explore-link">Rankings</a
             ><a href="#" class="footer__explore-link">Connect a wallet</a>
           </nav>
