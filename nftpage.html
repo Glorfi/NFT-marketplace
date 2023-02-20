@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/nftpage.css" />
     <title>NFT MarketPlace</title>
+    <script src="./script.js" defer></script>
   </head>
   <body class="body">
     <header class="header">
@@ -108,17 +109,17 @@
         <p class="timer__title">Auction ends in:</p>
         <div class="timer__container">
           <div class="timer__block">
-            <p class="timer__number">23</p>
+            <p class="timer__number" id="hoursItem">23</p>
             <p class="timer__text">hours</p>
           </div>
           <span class="timer__span">:</span>
           <div class="timer__block">
-            <p class="timer__number">59</p>
+            <p class="timer__number" id="minutesItem">59</p>
             <p class="timer__text">minutes</p>
           </div>
           <span class="timer__span">:</span>
           <div class="timer__block">
-            <p class="timer__number">59</p>
+            <p class="timer__number" id="secondsItem">59</p>
             <p class="timer__text">seconds</p>
           </div>
         </div>
@@ -355,7 +356,6 @@
             </div>
           </div>
         </a>
-        
       </div>
       <a
         href="./artistpage.html"
