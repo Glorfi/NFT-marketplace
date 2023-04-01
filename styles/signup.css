@@ -5,6 +5,37 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 60px;
 }
+.signup__wallet {
+  /* display: flex;
+  flex-direction: column; */
+  margin-top: 20px;
+  display: grid;
+  gap: 20px;
+}
+.signup__wallet-link {
+  margin: 0;
+  padding: 16px 20px 16px 40px;
+  max-width: 320px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: white;
+  background-color: #3b3b3b;
+  border: 1px solid #a259ff;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.signup__wallet-icon {
+  width: 100%;
+  max-width: 40px;
+  margin-right: 20px;
+}
 .signup__picture {
   width: 100%;
   min-height: 691px;
@@ -13,11 +44,16 @@
   background-repeat: no-repeat;
   object-fit: cover;
 }
+.signup__picture_wallet {
+  background-image: url(../images/connectwallet_picture.png);
+  min-height: 642px;
+}
 .signup__container {
   min-width: 47.65625%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* align-items: center; */
 }
 .signup__title {
   margin: 0;
@@ -110,8 +146,12 @@ input:focus {
     min-height: 232px;
     /* background-image: url(../images/sign-up_picture_2.png); */
   }
+  .signup__picture_wallet {
+    min-height: 232px;
+  }
   .signup__container {
     width: 100%;
+    align-items: center;
   }
   .signup__title {
     margin-top: 30px;
@@ -133,6 +173,19 @@ input:focus {
   .signup-form__input-container:first-child {
     margin-top: 30px;
   }
+  .signup__wallet {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .signup__wallet{
+    width: 84%;
+  }
+  .signup__wallet-link {
+    width: 100%;
+    max-width: none;
+  }
 }
 @media screen and (max-width: 376px) {
   .signup {
@@ -141,5 +194,9 @@ input:focus {
   .signup__picture {
     min-height: 232px;
     background-image: url(../images/sign-up_picture_2.png);
+  }
+  .signup__picture_wallet {
+    background-image: url(../images/connectwallet_picture.png);
+    object-fit: scale-down;
   }
 }

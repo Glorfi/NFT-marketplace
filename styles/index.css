@@ -1,5 +1,8 @@
 @import url(./normalize.css);
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;600;800&display=swap");
+@import url(./signup.css);
+@import url(./marketplace.css);
+@import url(./artistpage.css);
 
 .scale-down {
   transition: 0.2s ease-in-out;
@@ -32,6 +35,7 @@
 .header__logo-link {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .header__menu {
   min-height: 60px;
@@ -56,8 +60,31 @@
   font-size: 16px;
   line-height: 140%;
   text-align: center;
+  cursor: pointer;
 }
-.header__link:last-child {
+.header__button {
+  min-width: 112px;
+  height: 60px;
+  padding-top: 0;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 0;
+  background-color: #a259ff;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  margin-right: 0;
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  cursor: pointer;
+}
+/* .header__link:last-child {
   min-width: 112px;
   height: 60px;
   padding-top: 0;
@@ -67,7 +94,7 @@
   margin-right: 0;
   display: flex;
   align-items: center;
-}
+} */
 .signup-icon {
   margin-right: 12px;
 }
@@ -120,6 +147,7 @@
   color: #ffffff;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .lead__button-icon {
   margin-right: 12px;
@@ -322,6 +350,7 @@
   text-decoration: none;
   color: white;
   object-fit: cover;
+  cursor: pointer;
 }
 .creators__avatar-ranking-container {
   display: flex;
@@ -344,6 +373,7 @@
 }
 .creators__avatar {
   max-width: 120px;
+  border-radius: 50%;
 }
 .creators__name {
   width: 100%;
@@ -484,13 +514,27 @@
   display: flex;
   justify-content: space-between;
 }
+.discover__cards_marketplace {
+  position: relative;
+  margin: 0 auto 0 auto;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  width: 82.03125%;
+  max-width: 1050px;
+  flex-wrap: wrap;
+}
 .discover__card {
   width: 31.42857142857143%;
-  background: #3b3b3b;
+  background-color: #3b3b3b;
   border-radius: 20px;
   text-decoration: none;
   color: white;
 }
+.discover__card_marketplace {
+  margin-top: 2.857142857142857%;
+  background-color: #2b2b2b;
+}
+
 .discover__card-image {
   width: 100%;
 }
@@ -516,6 +560,7 @@
 .discover__card-artist-icon {
   max-width: 24px;
   margin-right: 12px;
+  border-radius: 50%;
 }
 .discover__card-artist-name {
   margin: 0;
@@ -1013,6 +1058,7 @@
   line-height: 110%;
   color: #cccccc;
 }
+
 @media screen and (max-width: 835px) {
   .header__logo {
     max-width: 182px;
@@ -1027,8 +1073,24 @@
   .header__menu-items {
     display: none;
   }
+  .header__menu-items_active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 54px;
+    right: -5vw;
+    width: 120vw;
+    height: 100vh;
+    background-color: #2b2b2b;
+    align-items: flex-end;
+    z-index: 100;
+  }
   .header__link {
     padding-right: 0;
+    margin-right: 5vw;
+  }
+  .header__button {
+    margin-top: 12px;
     margin-right: 5vw;
   }
   .header__link:last-child {
@@ -1086,7 +1148,7 @@
     width: 100%;
     transform: rotate(90deg);
   }
-  #menu__toggle:checked ~ .header__menu-items {
+  /* #menu__toggle:checked ~ .header__menu-items {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -1097,7 +1159,7 @@
     background-color: #2b2b2b;
     align-items: flex-end;
     z-index: 100;
-  }
+  } */
   .lead {
     margin: 9.59% auto 0 auto;
     width: 82.733813%;
@@ -1247,6 +1309,9 @@
   .discover__cards {
     margin-top: 40px;
   }
+  .discover__cards_marketplace {
+    margin-top: 0;
+  }
   .discover__card {
     width: 47.82608695652174%;
   }
@@ -1372,7 +1437,7 @@
     min-height: 60px;
   }
 }
-/* промежуточное разрешение для блока криеторс, доделать карточки */
+
 @media screen and (max-width: 780px) {
   .creators__card {
     max-width: none;
@@ -1384,7 +1449,7 @@
     font-size: 12px;
   }
 }
-/* адаптировать под промежуточные разрешения как под мобилку в основном свойство max-width */
+
 @media screen and (max-width: 525px) {
   .header {
     margin-top: 4%;
@@ -1397,6 +1462,10 @@
     margin-right: 10vw;
   }
   .header__link:last-child {
+    margin-right: 10vw;
+  }
+  .header__button {
+    margin-top: 12px;
     margin-right: 10vw;
   }
   .lead {
